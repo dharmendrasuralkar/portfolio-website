@@ -1,0 +1,494 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #333;
+  color: #f4f7f6;
+}
+
+header {
+  background-color: #2d3e50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header.dark-mode {
+  background-color: #1f2833;
+}
+
+header h1 {
+  font-size: 3em;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+header nav ul li {
+  display: inline;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-size: 1.1em;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+header nav ul li a:hover {
+  background-color: #61dafb;
+  color: #333;
+}
+
+/* Dark Mode Navigation */
+header.dark-mode nav ul li a {
+  color: #bbb;
+}
+
+header.dark-mode nav ul li a:hover {
+  background-color: #61dafb;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #2d3e50;
+}
+
+h2.dark-mode {
+  color: #f4f7f6;
+}
+
+p {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+p.dark-mode {
+  color: #bbb;
+}
+
+ul {
+  margin: 20px 0;
+}
+
+ul li {
+  font-size: 1.1em;
+}
+
+ul li a {
+  color: #2d3e50;
+}
+
+ul li a:hover {
+  color: #61dafb;
+}
+
+ul li a.dark-mode {
+  color: #f4f7f6;
+}
+
+ul li a.dark-mode:hover {
+  color: #61dafb;
+}
+
+.btn {
+  background-color: #61dafb;
+  color: #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #4b8bd6;
+}
+
+footer {
+  background-color: #2d3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+footer.dark-mode {
+  background-color: #1f2833;
+}
+
+footer p {
+  font-size: 1em;
+}
+
+footer.dark-mode p {
+  color: #bbb;
+}
+
+/* Dark Mode Button */
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #61dafb;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#theme-toggle:hover {
+  background-color: #4b8bd6;
+}
+
+#theme-toggle.dark-mode {
+  background-color: #333;
+  color: #f4f7f6;
+}
+
+/* General Section Styling */
+section h3 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #2d3e50;
+}
+
+section ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+
+section ul li {
+  font-size: 1.1em;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 10px;
+}
+
+#skills, #education, #work-experience, #certifications {
+  margin-bottom: 30px;
+}
+
+/* Dark Mode Adjustments */
+body.dark-mode #skills, body.dark-mode #education, body.dark-mode #work-experience, body.dark-mode #certifications {
+  color: #f4f7f6;
+}
+
+body.dark-mode section ul li {
+  color: #bbb;
+}
+
+
+/* Projects Section */
+#projects {
+  margin-top: 40px;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 15px;
+  color: #2d3e50;
+}
+
+.project {
+  margin-bottom: 30px;
+}
+
+.project h3 {
+  font-size: 2em;
+  color: #2d3e50;
+  margin-bottom: 10px;
+}
+
+.project ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.project ul li {
+  font-size: 1.2em;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.project .project-diagram {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+}
+
+.project .btn {
+  background-color: #61dafb;
+  color: white;
+  padding: 10px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+.project .btn:hover {
+  background-color: #4b8bd6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  h2 {
+    font-size: 2em;
+  }
+
+  .project h3 {
+    font-size: 1.5em;
+  }
+
+  .project p, .project ul li {
+    font-size: 1em;
+  }
+
+  .project .btn {
+    font-size: 1em;
+  }
+}
+
+/* Blue Gradient Animation */
+@keyframes blueGradientFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+header, footer {
+  background: linear-gradient(-45deg, #0f2027, #203a43, #2c5364);
+  background-size: 400% 400%;
+  animation: blueGradientFlow 15s ease infinite;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* Header Specific */
+.header-content h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.header-content p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Footer Specific */
+.footer-content p {
+  font-size: 0.9rem;
+  margin: 0;
+  opacity: 0.8;
+}
+
+/* Body Background Animation */
+body {
+  margin: 0;
+  padding: 0;
+  background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
+  overflow-x: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  color: #fff;
+}
+
+/* Floating Particles */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: repeating-radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 2px);
+  background-size: 50px 50px;
+  animation: floatParticles 10s linear infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Floating Animation */
+@keyframes floatParticles {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+section {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 30, 0.4); /* Darker transparent background for better contrast */
+  padding: 40px;
+  margin: 20px auto;
+  border-radius: 16px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.25);
+  color: #ffffff; /* Ensure text stays bright */
+}
+
+
+
+/* Highlight and animate text inside body */
+body {
+  color: #ffffff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-size: 1.1rem;
+}
+
+/* Highlight important headings */
+h1, h2, h3, h4 {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+/* Highlight paragraphs and animate on scroll */
+p, li {
+  color: #e0f7fa;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Add hover glow to links and text */
+a {
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  position: relative;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  left: 0; bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background: #00ffff;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Optional glowing section titles */
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(to right, #00f0ff, #00ffb3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: glowTitle 3s infinite alternate;
+}
+
+@keyframes glowTitle {
+  0% {
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+  }
+  100% {
+    text-shadow: 0 0 20px rgba(0, 255, 255, 0.8);
+  }
+}
+
+/* Set white color for regular text */
+p, li, span, a, strong, em {
+  color: #ffffff !important;
+}
+
+/* Keep main headings glowing (do not change these) */
+h1, h2, h3, h4 {
+  color: #00ffff;
+  text-shadow: 0 0 10px rgba(0, 255, 255, 0.6);
+}
+
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 3px solid #00ffff;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.4);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.05);
+}
+
+.header-text {
+  text-align: left;
+}
+
+
